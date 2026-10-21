@@ -3,126 +3,219 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#0a1220">
+  <meta name="theme-color" content="#0d1628">
+  <meta name="description" content="一则童话家写给重要之人的生日童话">
   <title>生日快乐  公主殿下</title>
+  <link rel="preload" href="fonts/wenkai-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link href="princess.css" rel="stylesheet">
   <script>document.documentElement.className = "js";</script>
 </head>
 <body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="sprig" viewBox="0 0 160 36">
+      <path d="M8 18H58M102 18H152" stroke="currentColor" stroke-width="1" fill="none"/>
+      <path d="M80 6c-7 1-12 5-13 11 6 0 11-3 13-11z" fill="#7d8a52"/>
+      <path d="M80 6c7 1 12 5 13 11-6 0-11-3-13-11z" fill="#93a064"/>
+      <path d="M80 6v9M80 15l-6 5M80 15l6 4" stroke="#6b5a3e" stroke-width="1" fill="none"/>
+      <circle cx="73" cy="24" r="6.5" fill="#b23a4b"/>
+      <circle cx="87" cy="23.5" r="6" fill="#c9505f"/>
+      <circle cx="73" cy="24" r="6.5" fill="none" stroke="#8a2537" stroke-width="1.2" stroke-dasharray="1 2.2"/>
+      <circle cx="87" cy="23.5" r="6" fill="none" stroke="#8a2537" stroke-width="1.2" stroke-dasharray="1 2.2"/>
+    </symbol>
+  </svg>
+
   <div class="home">
-    <header class="hero wrap">
-      <div class="hero-text">
-        <p class="eyebrow">生日快乐 · 公主殿下</p>
-        <h1><span>一则童话家写给</span><span>重要之人的生日童话</span></h1>
-        <p class="wish">祝你生日快乐，十八岁之后的生活，平安喜乐，万事顺遂</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="#born">从第一篇读起</a>
-          <a class="btn btn-ghost" href="#stories">选一篇故事</a>
+    <header class="cover">
+      <div class="cover-bg" aria-hidden="true"></div>
+      <div class="cover-inner">
+        <figure class="cover-art">
+          <img src="night.jpg" alt="捧着发光星星的白熊和小兔子" width="1024" height="1024">
+        </figure>
+        <div class="cover-text">
+          <p class="kicker">一则童话家写给重要之人的生日童话</p>
+          <h1><span>生日快乐</span><span class="accent">公主殿下</span></h1>
+          <p class="wish"><span>祝你生日快乐，</span><span>十八岁之后的生活，</span><span>平安喜乐，万事顺遂</span></p>
+          <div class="cover-actions">
+            <a class="btn" href="#envelope">拆开二十四岁的信</a>
+            <a class="text-link" href="#contents">翻开故事集</a>
+          </div>
         </div>
       </div>
-      <figure class="hero-art">
-        <img src="night.jpg" alt="捧着发光星星的白熊和小兔子">
-      </figure>
+      <svg class="cover-edge" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 48C120 30 240 62 360 52S600 18 720 34s240 40 360 30 240-38 360-28V80H0z" fill="currentColor"/>
+      </svg>
     </header>
 
-    <section class="dedication wrap">
-      <img src="princess.jpg" alt="公主">
-      <div>
-        <h2>希望日后公主殿下的眼眸，永远如此含笑有神，如此满怀希冀，如此纯净美好</h2>
+    <section class="envelope-section" id="envelope">
+      <p class="kicker">卷二 · 二十四岁</p>
+      <h2 class="section-title">一封来自远方的信</h2>
+      <a class="envelope" href="#letter" aria-label="拆开来自远方的信">
+        <span class="env-back"></span>
+        <span class="env-letter"><b>我的荔枝公主，展信佳。</b>二十四岁生日快乐。</span>
+        <span class="env-front"></span>
+        <span class="env-flap"></span>
+        <span class="env-seal">荔</span>
+        <span class="env-to">致 荔枝公主<small>寄自 远方的童话家</small></span>
+        <span class="env-stamp">廿四</span>
+      </a>
+      <p class="env-hint">轻触信封，拆开它</p>
+    </section>
+
+    <section class="keepsake">
+      <figure class="polaroid">
+        <img src="princess.jpg" alt="公主" width="1024" height="768">
+        <figcaption>荔枝公主</figcaption>
+      </figure>
+      <div class="keepsake-text">
+        <h2><span>希望日后公主殿下的眼眸，</span><span>永远如此含笑有神，</span><span>如此满怀希冀，</span><span>如此纯净美好</span></h2>
         <p>十八岁以后的你会是成长后更好的你　也会是最初的你。</p>
       </div>
     </section>
 
-    <section class="library wrap" id="stories">
-      <div class="section-head">
-        <p class="eyebrow">故事集</p>
-        <h2>童话家的七篇故事</h2>
-        <p class="sub">点开任意一篇，一篇一篇慢慢读</p>
+    <section class="contents" id="contents">
+      <header class="contents-head">
+        <p class="kicker">目录</p>
+        <h2 class="section-title">童话家的故事集</h2>
+      </header>
+      <div class="volume">
+        <h3 class="volume-title"><span>卷二</span>二十四岁</h3>
+        <ol class="toc">
+          <li class="is-new"><a href="#letter">
+            <span class="toc-num">捌</span>
+            <span class="toc-main"><span class="toc-title">来自远方的信</span><span class="toc-excerpt">你可以累的。</span></span>
+            <span class="toc-meta">生日童话 · 6 分钟</span>
+          </a></li>
+        </ol>
       </div>
-      <div class="cards">
-        <a class="card featured" href="#born">
-          <span class="num" aria-hidden="true">壹</span>
-          <span class="tag">生日童话 · 附信</span>
-          <h3>生于此日，冕于此时</h3>
-          <p class="excerpt">千秋同岁，星落花摇，世间一切好似没有变化般地过去了很多年</p>
-          <span class="meta"><span>约 5 分钟</span><span>阅读 →</span></span>
-        </a>
-        <a class="card" href="#start">
-          <span class="num" aria-hidden="true">贰</span>
-          <span class="tag">童话</span>
-          <h3>起点</h3>
-          <p class="excerpt">从前，有一位漂亮可爱的荔枝公主</p>
-          <span class="meta"><span>约 3 分钟</span><span>阅读 →</span></span>
-        </a>
-        <a class="card" href="#color">
-          <span class="num" aria-hidden="true">叁</span>
-          <span class="tag">诗</span>
-          <h3>彩色·灰色</h3>
-          <p class="excerpt">“今天的童话，是彩色的...”</p>
-          <span class="meta"><span>约 2 分钟</span><span>阅读 →</span></span>
-        </a>
-        <a class="card" href="#beken">
-          <span class="num" aria-hidden="true">肆</span>
-          <span class="tag">童话</span>
-          <h3>小熊贝肯</h3>
-          <p class="excerpt">小团子发着蓝色的光。</p>
-          <span class="meta"><span>约 4 分钟</span><span>阅读 →</span></span>
-        </a>
-        <a class="card" href="#past">
-          <span class="num" aria-hidden="true">伍</span>
-          <span class="tag">童话</span>
-          <h3>前前前世</h3>
-          <p class="excerpt">球里面像是有万千星辰闪烁，摄人心魄</p>
-          <span class="meta"><span>约 3 分钟</span><span>阅读 →</span></span>
-        </a>
-        <a class="card" href="#shade">
-          <span class="num" aria-hidden="true">陆</span>
-          <span class="tag">诗</span>
-          <h3>一首阴暗写给美好的诗</h3>
-          <p class="excerpt">公主像是一片棉花糖　可爱又梦幻</p>
-          <span class="meta"><span>约 2 分钟</span><span>阅读 →</span></span>
-        </a>
-        <a class="card" href="#view">
-          <span class="num" aria-hidden="true">柒</span>
-          <span class="tag">童话 · 后记</span>
-          <h3>这一生关于你的风景</h3>
-          <p class="excerpt">时光不老，我们......不散。</p>
-          <span class="meta"><span>约 4 分钟</span><span>阅读 →</span></span>
-        </a>
+      <div class="volume">
+        <h3 class="volume-title"><span>卷一</span>十八岁</h3>
+        <ol class="toc">
+          <li><a href="#born">
+            <span class="toc-num">壹</span>
+            <span class="toc-main"><span class="toc-title">生于此日，冕于此时</span><span class="toc-excerpt">千秋同岁，星落花摇，世间一切好似没有变化般地过去了很多年</span></span>
+            <span class="toc-meta">生日童话 · 5 分钟</span>
+          </a></li>
+          <li><a href="#start">
+            <span class="toc-num">贰</span>
+            <span class="toc-main"><span class="toc-title">起点</span><span class="toc-excerpt">从前，有一位漂亮可爱的荔枝公主</span></span>
+            <span class="toc-meta">童话 · 3 分钟</span>
+          </a></li>
+          <li><a href="#color">
+            <span class="toc-num">叁</span>
+            <span class="toc-main"><span class="toc-title">彩色·灰色</span><span class="toc-excerpt">“今天的童话，是彩色的...”</span></span>
+            <span class="toc-meta">诗 · 2 分钟</span>
+          </a></li>
+          <li><a href="#beken">
+            <span class="toc-num">肆</span>
+            <span class="toc-main"><span class="toc-title">小熊贝肯</span><span class="toc-excerpt">小团子发着蓝色的光。</span></span>
+            <span class="toc-meta">童话 · 4 分钟</span>
+          </a></li>
+          <li><a href="#past">
+            <span class="toc-num">伍</span>
+            <span class="toc-main"><span class="toc-title">前前前世</span><span class="toc-excerpt">球里面像是有万千星辰闪烁，摄人心魄</span></span>
+            <span class="toc-meta">童话 · 3 分钟</span>
+          </a></li>
+          <li><a href="#shade">
+            <span class="toc-num">陆</span>
+            <span class="toc-main"><span class="toc-title">一首阴暗写给美好的诗</span><span class="toc-excerpt">公主像是一片棉花糖　可爱又梦幻</span></span>
+            <span class="toc-meta">诗 · 2 分钟</span>
+          </a></li>
+          <li><a href="#view">
+            <span class="toc-num">柒</span>
+            <span class="toc-main"><span class="toc-title">这一生关于你的风景</span><span class="toc-excerpt">时光不老，我们......不散。</span></span>
+            <span class="toc-meta">童话 · 4 分钟</span>
+          </a></li>
+        </ol>
       </div>
     </section>
 
     <footer class="site-foot">
-      <p>✦ 生日快乐 公主殿下 ✦</p>
+      <svg class="ornament" viewBox="0 0 160 36" aria-hidden="true"><use href="#sprig"/></svg>
+      <p>生日快乐 公主殿下</p>
       <p><a href="旧版/">看看最初的那一版</a></p>
     </footer>
   </div>
 
   <main class="reader">
-    <div class="reader-bar">
-      <div class="wrap">
-        <a class="back" href="#stories">← 故事集</a>
-        <label class="picker">
-          <select id="story-select" aria-label="选择故事">
-          <option value="born">壹 · 生于此日，冕于此时</option>
-          <option value="start">贰 · 起点</option>
-          <option value="color">叁 · 彩色·灰色</option>
-          <option value="beken">肆 · 小熊贝肯</option>
-          <option value="past">伍 · 前前前世</option>
-          <option value="shade">陆 · 一首阴暗写给美好的诗</option>
-          <option value="view">柒 · 这一生关于你的风景</option>
-          </select>
-        </label>
-      </div>
-      <div class="progress"><span></span></div>
-    </div>
+    <nav class="reader-nav" aria-label="阅读导航">
+      <a class="nav-back" href="#contents">‹ 目录</a>
+      <span class="nav-title" id="nav-title"></span>
+      <span class="nav-arrows">
+        <a id="nav-prev" href="#" aria-label="上一篇">‹</a>
+        <a id="nav-next" href="#" aria-label="下一篇">›</a>
+      </span>
+      <span class="progress"><span></span></span>
+    </nav>
 
+    <article class="story" id="letter" data-title="来自远方的信">
+      <header class="chapter-head">
+        <p class="chapter-vol">卷二 · 二十四岁</p>
+        <span class="chapter-num" aria-hidden="true">捌</span>
+        <h2>来自远方的信</h2>
+        <p class="chapter-meta">生日童话 · 远方来信 · 约 6 分钟</p>
+        <svg class="ornament" viewBox="0 0 160 36" aria-hidden="true"><use href="#sprig"/></svg>
+      </header>
+      <div class="prose">
+<p>又是一个秋天。</p>
+<p>王国的秋天总是来得很慢。先是街角的紫罗兰收起了颜色，再是风里有了一点凉意，最后才轮到城外那片荔枝林，叶子一层一层地深下去，像在替谁守着一个很久以前的约定。</p>
+<p>荔枝公主已经很久没有注意过这些了。</p>
+<p>六年前，她在国都迎来十八岁，捧着一颗永久保存的记忆水晶，以为长大就是从此可以一个人去很远的地方。后来，她真的去了很远的地方——王国南方的一座城，那里有全国最古老的医者学院。她换上白袍，背下一本又一本厚厚的医典，学会了在深夜的病房里分辨每一声呼吸，学会了在别人最疼的时候，先稳住自己的手。</p>
+<p>只是从来没有人教过她，自己疼的时候，该怎么办。</p>
+<p>这一年格外漫长。夜班的灯总要亮到天快亮，她常常在脱下白袍的那一刻，才发现一整天只喝过一口水。前些日子，那个说要陪她看遍王国四季的人，也在一个下雨的傍晚走了。他走得很客气，还把伞留给了她。她撑着那把伞回到住处，没有哭。第二天照常查房，照常对每一个病人笑。</p>
+<p>只有在回去的路上，经过一家草药铺时，她站了很久。铺子里飘出来的味道很苦，她忽然想起一句话：世间草木皆美，人不是；草药皆苦，可正是这些苦，让人变成更好的自己。</p>
+<p>她记得，那是从一个童话里读来的。</p>
+<p>写童话的那个人，现在在哪里呢？</p>
+<div class="break" role="separator"></div>
+<p>王国的另一边，另一座城的学院里，也有一盏灯亮得很晚。</p>
+<p>童话家这几年也成了学院里的研习生，每天和成摞的卷宗待在一起，笔下的东西从童话变成了论文。脾气倒是一点没变——依旧敏感，依旧爱操心，依旧把在意的人，藏在心里最安静的那个角落。</p>
+<p>他是从吟游诗人那里听说的。诗人路过南方那座城，在医者学院门口远远看见了公主。“瘦了，”诗人说，“笑起来还是好看，就是很累的样子。”</p>
+<p>那天晚上，童话家没有碰他的卷宗。他铺开信纸，蘸了墨，第一行写了又划掉，划掉又重写，一直写到窗外的星星都挪了位置。</p>
+<div class="letter airmail">
+<span class="postmark" aria-hidden="true">远方<b>廿四</b>秋</span>
+<p class="salutation">我的荔枝公主，展信佳。</p>
+<p>二十四岁生日快乐。</p>
+<p>提笔的时候我算了算，从你十八岁到现在，正好六年。六年，够莱顿的荔枝树再长高一截，够紫罗兰谢了又开六回，也够一个傻乎乎跑进荔枝林的小姑娘，长成一个穿着白袍、在病床前站成一盏灯的医者。我总觉得这件事很了不起，比我写过的任何一个童话都了不起。</p>
+<p>听说你最近很累。</p>
+<p>我没有学过医，不懂你每天面对的那些名词，可我大概能想象：凌晨的走廊，没喝完就凉掉的水，还有那些不能在病人面前掉下来的眼泪。你一直是这样，把每个人都照顾得很好，然后把自己排在最后一个。所以这封信，想替你记下一句话，也只这一句——</p>
+<p class="emph">你可以累的。</p>
+<p>累了就停一停。这不是偷懒，也不是不够坚强。医典上大概不会写这一条，那就写在我的信里，你记着就好。</p>
+<p>我也听说了那个人离开的事。我不想说他的不好，你喜欢过的人，总有值得喜欢的地方；我也不想说“他配不上你”，因为你从来不是谁的奖赏，你只是你自己。我只想告诉你：一个人走了，不代表你不好。就像秋天的叶子落了，从来都不是树的错。树还在，根还在，春天一来，它照样会开花——说不定，还会在深秋结出果子来，就像你出生那年，莱顿的荔枝树做过的那样。</p>
+<p>还记得草药铺老人说过的话吗？六年前，我把它写进了给你的童话里，那时以为自己懂了。现在才明白，苦就是苦，不必硬说它是甜的。你只要知道，你咽下的每一服苦药，都不会白苦——它们会慢慢变成你手心里的温度，有一天去暖别人，也会回过头来，暖你自己。</p>
+<p>至于我，还在原来的地方。不是站着不动的意思，我也在往前走，只是走得慢一些，好让你回头的时候，一眼就能找到我。从前我总说要追上你，现在想想，追不追得上都不要紧了。你往前走，我在后面；你累了回头，我就在。</p>
+<p>这封信要走很远的路才能到你手里。路上会经过莱顿，我托它替我看一眼那棵荔枝树。等你拆开的时候，就当是莱顿的风绕了一大圈，来给你过生日了。</p>
+<p class="signoff">生日快乐啊，我青春里最美的风景，也是往后很多很多年里，我最想守着的那座青山。</p>
+<p class="sign">—— 远方的童话家</p>
+</div>
+<div class="break" role="separator"></div>
+<p>公主生日那天，下了夜班，已经是黄昏了。</p>
+<p>她拖着步子走回住处，远远看见门口站着一个人。那人披着一件旧旧的斗篷，兜帽压得很低，手里捧着一封用荔枝叶包着的信。</p>
+<p>“是荔枝公主吗？”那人的声音也压得很低，“有您的信，从很远的地方寄来的。”</p>
+<p>公主愣了一下。六年前，也有一个戴兜帽的人这样等在她门口，那时她就觉得，那张脸有几分相似。</p>
+<p>她接过信，就站在门口拆开了。信纸有些皱，像是被人攥在手心里走了很长的路。她一行一行地读，读到“你可以累的”，眼眶就红了；读到“树还在，根还在”，终于没忍住，眼泪一颗一颗落在信纸上，把“青山”两个字晕开了一小片。</p>
+<p>“寄信的人……”她低着头，声音有些哑，“他还好吗？”</p>
+<p>“他啊，”那人说，“坐了一夜的马车，在门口等了三个时辰。怕你下班晚，又怕你下班早。腿有点麻，别的都还好。”</p>
+<p>公主猛地抬起头。</p>
+<p>兜帽落了下来。是那张她再熟悉不过的脸，眼睛弯弯的，有点不好意思地笑着，另一只手里还拎着一小袋荔枝——不是这个季节该有的果子。</p>
+<p>“莱顿的荔枝树，今年深秋又结果了，”童话家说，“我顺路摘的。”</p>
+<p>“你……你不是在远方吗？”</p>
+<p>“信是从远方来的，”童话家说，“我也是。”</p>
+<p>“那为什么不直接说是你？”</p>
+<p>“怕你一见到我，就不肯好好看信了。”他把荔枝塞进她手里，“信里的话，要你一个字一个字看完才算数。”</p>
+<p>他顿了顿，声音轻了下去：“我不是来替谁站在这里的。我只是想，在你最累的这一年，至少有一个生日，不用一个人过。”</p>
+<p>“所以——生日快乐，公主殿下。”</p>
+<p>那天黄昏的风很轻。后来公主跟别人说起，总说是那袋荔枝太甜了，她才哭的。</p>
+<p>童话家从不拆穿她。回程的马车上，他翻开那本只写给一个人的童话集，在新的一页写下：</p>
+<p class="coda">“二十四岁这年，公主很累，也很勇敢。这一次，童话家没有托任何人送信——有些路，要自己走过去，才算真的到了。”</p>
+<p class="fin">end</p>
+      </div>
+    </article>
     <article class="story" id="born" data-title="生于此日，冕于此时">
-      <header class="story-head">
-        <span class="num">壹</span>
-        <p class="tag">生日童话 · 附信</p>
+      <header class="chapter-head">
+        <p class="chapter-vol">卷一 · 十八岁</p>
+        <span class="chapter-num" aria-hidden="true">壹</span>
         <h2>生于此日，冕于此时</h2>
-        <p class="meta">约 5 分钟</p>
+        <p class="chapter-meta">生日童话 · 附信 · 约 5 分钟</p>
+        <svg class="ornament" viewBox="0 0 160 36" aria-hidden="true"><use href="#sprig"/></svg>
       </header>
       <div class="prose">
 <p>那是一个阳光和煦的秋日。</p>
@@ -141,7 +234,7 @@
 <p>“您终于回来了，荔枝小公主。这是您的童话家先生给你的信，还有这份由我的老师，王国最伟大的魔法师制作的永久保存的记忆水晶。”戴着兜帽的身影看到小公主后，站了起来，摘下了兜帽，露出一张青涩的脸庞,给了小公主两样用树叶包着的东西。</p>
 <p>“他......怎么会能给我这么珍贵的东西，他有付出什么严重的代价么？”小公主看着眼前的魔法师学徒，总感觉有几分相似。</p>
 <p>“请您放心，他没有付出代价，而且，水晶本身并不珍贵，我也能做得出来，珍贵的，是心。”学徒说完，慢慢地向远方走去，小公主回到了屋里，拆开了那封，曾经属于她的童话家，给她写的信。</p>
-<div class="letter">
+<div class="letter sealed">
 <p class="letter-poem">“我回到了我们的起点，莱顿，<br/>
 在莱顿塔顶眺望远处的运河，<br/>
 正是航海的季节，<br/>
@@ -164,22 +257,24 @@
       </div>
     </article>
     <article class="story" id="start" data-title="起点">
-      <header class="story-head">
-        <span class="num">贰</span>
-        <p class="tag">童话</p>
+      <header class="chapter-head">
+        <p class="chapter-vol">卷一 · 十八岁</p>
+        <span class="chapter-num" aria-hidden="true">贰</span>
         <h2>起点</h2>
-        <p class="meta">约 3 分钟</p>
+        <p class="chapter-meta">童话 · 约 3 分钟</p>
+        <svg class="ornament" viewBox="0 0 160 36" aria-hidden="true"><use href="#sprig"/></svg>
       </header>
       <div class="prose">
 <p>从前，有一位漂亮可爱的荔枝公主，追求她的人多极了，城市的守卫曾说，荔枝公主的宫殿经常会被狂热的追求者们窥视。一次，一位年轻人恰巧在宫殿外被御驾的皇帝遇见，皇帝大怒，下令不许公主宫殿范围内出现任何居心叵测之人。皇帝甚至请了宫殿的御用魔法师，在公主的宫殿外设下了魔法：公主的宫殿内，只要出现居心叵测，贪图公主美色的人，便会被魔法传送入国家的大牢中。公主原先有许多玩得来的异性朋友—公主单纯而善良，喜欢和男生一起玩，没有那些可怕的心机和明争暗斗，只有一个个对她很好而又都围着她的男孩子。可是，当魔法师施下结界后，公主就再也没见过那些人，公主甚至听说了一些她的“朋友”被送进大牢的传闻。她去找父皇，父皇只是看着她，希望她能早日成长，能保持单纯却又不会再受骗。公主在宫中无聊地踱步，突然有侍卫告诉公主，童话家来宫殿了。公主又高兴又惊奇，童话家走进了结界，却没有触发它。他是公主很要好的朋友，公主也曾想过他是否敢来找自己，踏进结界。而随着时间的流逝，童话家一直没来，甚至身边有宫女说童话家已经被投入了大牢，公主便决定不再主动联系打听他的消息，虽然心中有一丝抱歉，但公主总能很好地自制。因此，看到童话家主动前来，公主仍然十分惊奇，童话家走到公主面前，行了礼之后，便向公主说起了一个又一个他在这些天编出的故事，公主的心渐渐地平静下来，不再因为那些人的离去而伤心。童话家的故事有的很治愈，有的却会很现实，很悲伤，公主会暂时地有些不开心，侍女们将公主扶进屋后，童话家更会安静地坐在花园里，等待着公主重新来找童话家，而这时往往童话加又想好了下一轮的故事，继续说给公主听。而自始至终，童话家在结界中都能安然无恙，就这样一日复一日，一年复一年，童话家陪在公主身边，有时童话家会远行，给故事想灵感。这时来自童话家的信件任然会按时送达，后来，公主在一次舞会上遇到了邻国的王子，他们相爱了。二童话加仍然陪在公主身边，不过有时王子到来，童话家会又像以前一样，坐在花园的角落，等着王子和公主一起来听更多爱情的故事。有一天，公主告诉童话家，自己要出嫁了，嫁到邻国当王妃。童话家默默地点了点头，公主从父皇那里争取到了让童话家陪同的权利，可童话家留在了花园里，后来童话家去世了，人们整理遗物的时候，发现一本童话集，里面只有两篇故事：一篇记录了童话家的一生，一片记录了一位公主和一只鸟的友谊。</p>
       </div>
     </article>
     <article class="story" id="color" data-title="彩色·灰色">
-      <header class="story-head">
-        <span class="num">叁</span>
-        <p class="tag">诗</p>
+      <header class="chapter-head">
+        <p class="chapter-vol">卷一 · 十八岁</p>
+        <span class="chapter-num" aria-hidden="true">叁</span>
         <h2>《彩色·灰色》</h2>
-        <p class="meta">约 2 分钟</p>
+        <p class="chapter-meta">诗 · 约 2 分钟</p>
+        <svg class="ornament" viewBox="0 0 160 36" aria-hidden="true"><use href="#sprig"/></svg>
       </header>
       <div class="prose verse">
 <p>童话家坐在花园里，大道边，秋千上等待着</p>
@@ -215,15 +310,16 @@
 <p>裙摆飘飘　像春风刮过山间的空穴　像夕阳唤回暮归的岩雀</p>
 <p>“今天的童话想好了么”　童话家抬头　万物复苏</p>
 <p>“嗯”世间又有了色彩。“今天的童话，是彩色的...”</p>
-<p class="end">end</p>
+<p class="fin">end</p>
       </div>
     </article>
     <article class="story" id="beken" data-title="小熊贝肯">
-      <header class="story-head">
-        <span class="num">肆</span>
-        <p class="tag">童话</p>
+      <header class="chapter-head">
+        <p class="chapter-vol">卷一 · 十八岁</p>
+        <span class="chapter-num" aria-hidden="true">肆</span>
         <h2>《小熊贝肯》</h2>
-        <p class="meta">约 4 分钟</p>
+        <p class="chapter-meta">童话 · 约 4 分钟</p>
+        <svg class="ornament" viewBox="0 0 160 36" aria-hidden="true"><use href="#sprig"/></svg>
       </header>
       <div class="prose">
 <p>公主殿下收到的礼物，每年都能堆成一座小山，那些肉麻的告白和“无名”的礼物，殿下甚至都拆不完，扔在宫殿的角落里，可是公主此时却蹲在地上，看着面前一个毛茸茸的小团子。这是童话家从游吟诗人手中得到的小宠物。</p>
@@ -236,11 +332,12 @@
       </div>
     </article>
     <article class="story" id="past" data-title="前前前世">
-      <header class="story-head">
-        <span class="num">伍</span>
-        <p class="tag">童话</p>
+      <header class="chapter-head">
+        <p class="chapter-vol">卷一 · 十八岁</p>
+        <span class="chapter-num" aria-hidden="true">伍</span>
         <h2>《前前前世》</h2>
-        <p class="meta">约 3 分钟</p>
+        <p class="chapter-meta">童话 · 约 3 分钟</p>
+        <svg class="ornament" viewBox="0 0 160 36" aria-hidden="true"><use href="#sprig"/></svg>
       </header>
       <div class="prose">
 <p>王国来了位占卜师，据说从遥远的冻土感召了星星的指引，走了三年才到了国都，消息传到了每个人的耳里，因为占卜师有一颗与众不同的水晶球，能看出每个人的前前前世究竟是什么样子。殿下又听说王国的宫廷占卜家进了那个占卜师的帐篷后，很久才出来。八十岁的白胡子占卜师竟然冲帐篷行了礼，便想去帐篷里看看，可是国王身边的侍卫还没有弄清他的身份，所以公主不能以身犯险。此时，有一双眼睛盯上了童话家...（或许是公主好看的眸光？）</p>
@@ -259,11 +356,12 @@
       </div>
     </article>
     <article class="story" id="shade" data-title="一首阴暗写给美好的诗">
-      <header class="story-head">
-        <span class="num">陆</span>
-        <p class="tag">诗</p>
+      <header class="chapter-head">
+        <p class="chapter-vol">卷一 · 十八岁</p>
+        <span class="chapter-num" aria-hidden="true">陆</span>
         <h2>《一首阴暗写给美好的诗》</h2>
-        <p class="meta">约 2 分钟</p>
+        <p class="chapter-meta">诗 · 约 2 分钟</p>
+        <svg class="ornament" viewBox="0 0 160 36" aria-hidden="true"><use href="#sprig"/></svg>
       </header>
       <div class="prose verse">
 <p>童话家才不会让水晶球里的前前前世重演</p>
@@ -303,18 +401,19 @@
 <p>依旧那么美好　能包容他的缺点　他才发现自己内心深处其实并没有担心</p>
 <p>童话家写出了很多故事　因为他也有很多故事　因为他能够敏感地察觉到周围人的故事</p>
 <p>“大抵世上每个人都是如此　自命不凡　却又无足轻重。”</p>
-<p class="end">end</p>
+<p class="fin">end</p>
       </div>
     </article>
     <article class="story" id="view" data-title="这一生关于你的风景">
-      <header class="story-head">
-        <span class="num">柒</span>
-        <p class="tag">童话 · 后记</p>
+      <header class="chapter-head">
+        <p class="chapter-vol">卷一 · 十八岁</p>
+        <span class="chapter-num" aria-hidden="true">柒</span>
         <h2>《这一生关于你的风景》</h2>
-        <p class="meta">约 4 分钟</p>
+        <p class="chapter-meta">童话 · 后记 · 约 4 分钟</p>
+        <svg class="ornament" viewBox="0 0 160 36" aria-hidden="true"><use href="#sprig"/></svg>
       </header>
       <div class="prose">
-<p class="part">一.</p>
+<p class="part"><span>一</span></p>
 <p>其实有件事，童话家不知道</p>
 <p>公主其实也去了帐篷，见了那位占星师</p>
 <p>占星师说出要求的时候，公主微笑了起来</p>
@@ -325,12 +424,12 @@
 <p>“唉？？！为什么别人是前前前世，到了我却不一样了？”公主略显疑惑地偏了偏头。</p>
 <p>“这是我对您善解人意的报答，殿下。观测的世界离现世越近，受到的干扰越大，对我的损耗也越大，，但您值得这次体验。”占星师虔诚地回答道。</p>
 <p>公主笑了笑，也没回答，双手背向身后，将额头贴在水晶球上......</p>
-<p class="part">二.</p>
+<p class="part"><span>二</span></p>
 <p>"陪你走过那山高水长,陪你一起生长~"最后一个音符落下,似繁华落尽.男孩抬头看着对面的女孩,认真地看着女孩笨拙地拨弦,公主认出了女孩的脸,同自己一般,可男孩的脸被琴架挡住,公主疾步地向一边走去,回头一望,那是童话家的脸。</p>
 <p>前世的两个人在学校学习,相识,相知,慢慢地成了朋友,公主渐渐地发现自己的生活里闯进了一个男孩,她有些排斥,但经历了几次的冷脸相对后,童话家仍然在原地等待,他相信公主会回头,公主发现生活里有太多的痕迹,都是童话家留下的,有太多的人,都是匆匆过客。她回过头,童话家还站在那,于是慢慢地,她学会了接纳童话家,她和童话家终于又一次成为了好朋友。</p>
-<p class="part">三.</p>
+<p class="part"><span>三</span></p>
 <p>公主看到这，有些恍神，她想到了今世的童话家，看来即使世间万物变迁，白云苍狗，即使两人重新活了一世，有些东西还是没变啊。</p>
-<p class="part">四.</p>
+<p class="part"><span>四</span></p>
 <p>童话家和公主约好了很多事情，幻想了很多未来的故事，公主都会很开心地回应，可是有时，童话家总会提到过去的不愉快，让公主有些愧疚，困扰。后来，童话家写在本子上的一句话被公主无意间翻见：</p>
 <p>“总有一天，你和你在意的人能笑着讨论过去，互相怪罪，然后一笑了之，而后你们的心里也不会有顾虑，因为你们都知道对方不会因此而心生芥蒂，你们不是对方的心病，而是精神上的挚友。”</p>
 <p>公主明白的童话家会是自己一辈子的好朋友这句话不是说说而已，是永远的陪伴。</p>
@@ -339,7 +438,7 @@
 <p>后来他们都买得起房子的时候，大家一起买下了一层楼，按照自己的喜好把房子装修成最满意的样子，工作虽然忙，有时候大家都没法在家里吃饭，可到了周末，三个人一定会聚在一起，吃着童话家做的饭，看着总是得不到一致好评却看的很开心的电影，总是被压榨的童话家满口怨言，却总是笑着看着这里，眼底的温柔怎么也藏不住。</p>
 <p>那是家的感觉。</p>
 <p>童话往往经不起往下猜想，可这三个人，后来靠着公主的精明，成了啥也不干照样挣得比大家都多的日子，他们一起趁着年轻满世界旅行，看过极光，听过鲸鱼的叫声，吃过最好的料理，喝过最甜的特酿，更重要的是：遇见了彼此，成了最幸运的人。</p>
-<p class="part">五.</p>
+<p class="part"><span>五</span></p>
 <p>占星师问起了公主，公主说：“前世的风景很美。”占星师笑着说：“王国有首诗，叫《断章》。或许，殿下怎么说也是别人的风景呢。”</p>
 <p>致我青春里亏欠的风景，也是我往后一生的风景，时光不老，我们......不散。</p>
 <aside class="afterword">
@@ -350,9 +449,9 @@
     </article>
 
     <nav class="pager" aria-label="翻页">
-      <a class="prev" id="prev" href="#"><span>← 上一篇</span><strong></strong></a>
-      <a class="next" id="next" href="#"><span>下一篇 →</span><strong></strong></a>
-      <a class="home-link" href="#stories"><span>回到故事集</span></a>
+      <a class="prev" id="prev" href="#"><small>上一篇</small><strong></strong></a>
+      <a class="next" id="next" href="#"><small>下一篇</small><strong></strong></a>
+      <a class="to-contents" href="#contents"><small>回到目录</small></a>
     </nav>
   </main>
 
